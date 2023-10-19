@@ -37,8 +37,9 @@ def removeBG():
             # rembgで背景を除去
             processed_frame = remove(frame)
             save_filename = f"processed_frame_{int(current_time)}.png"
-            cv2.imwrite(save_filename, processed_frame)
-            print(f"Processed frame saved as {save_filename}")
+            # cv2.imwrite(save_filename, processed_frame)
+            cv2.imwrite('./Image/'+ save_filename, processed_frame)
+            # print(f"Processed frame saved as {save_filename}")
             save_interval += 10
             if save_interval > 30:
                 break
