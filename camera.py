@@ -24,7 +24,7 @@ def onMouseClick(event, x, y, flags, param):
     right_click = False
 
     if event == cv2.EVENT_LBUTTONDOWN:
-        print('右クリックされました')
+        print('左クリックされました')
         right_click = True
 
 
